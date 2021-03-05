@@ -1,0 +1,75 @@
+  {
+    "spec": {
+      "@class": "havis.middleware.ale.service.tm.TMFixedFieldListSpec",
+      "fixedFields": {
+        "fixedField": [
+          {
+            "fieldname": "pin1",
+            "bank": 3,
+            "length": 1,
+            "offset": 4303,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          },
+          {
+            "fieldname": "pin2",
+            "bank": 3,
+            "length": 1,
+            "offset": 4302,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          },
+          {
+            "fieldname": "pin3",
+            "bank": 3,
+            "length": 1,
+            "offset": 4301,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          },
+          {
+            "fieldname": "pin4",
+            "bank": 3,
+            "length": 1,
+            "offset": 4300,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          },
+          {
+            "fieldname": "State",
+            "bank": 3,
+            "length": 16,
+            "offset": 4288,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          },
+          {
+            "fieldname": "TID",
+            "bank": 2,
+            "length": 32,
+            "offset": 0,
+            "defaultDatatype": "uint",
+            "defaultFormat": "hex",
+            "extension": null
+          }
+        ]
+      },
+      "extension": null,
+      "any": [],
+      "baseExtension": null,
+      "schemaVersion": null,
+      "creationDate": null
+    },
+    "extension": null,
+    "any": null,
+    "name": "ETB_TM",
+    "baseExtension": null,
+    "schemaVersion": null,
+    "creationDate": null,
+    "enable": true
+  }

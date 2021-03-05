@@ -1,0 +1,129 @@
+{
+  "eventCycle": {
+    "spec": {
+      "logicalReaders": {
+        "logicalReader": [
+          "BuiltIn"
+        ]
+      },
+      "boundarySpec": {
+        "startTrigger": null,
+        "repeatPeriod": {
+          "value": 500,
+          "unit": "MS"
+        },
+        "stopTrigger": null,
+        "duration": {
+          "value": 500,
+          "unit": "MS"
+        },
+        "stableSetInterval": null,
+        "extension": null
+      },
+      "reportSpecs": {
+        "reportSpec": [
+          {
+            "reportSet": {
+              "set": "CURRENT"
+            },
+            "filterSpec": {
+              "includePatterns": null,
+              "excludePatterns": null,
+              "extension": {
+                "filterList": {
+                  "filter": [
+                    {
+                      "includeExclude": "INCLUDE",
+                      "fieldspec": {
+                        "fieldname": "TID",
+                        "datatype": null,
+                        "format": null,
+                        "extension": null
+                      },
+                      "patList": {
+                        "pat": [
+                          "xE280B040"
+                        ]
+                      },
+                      "extension": null
+                    },
+                    {
+                      "includeExclude": "INCLUDE",
+                      "fieldspec": {
+                        "fieldname": "State",
+                        "datatype": null,
+                        "format": null,
+                        "extension": null
+                      },
+                      "patList": {
+                        "pat": [
+                          "[x8000-x800F]"
+                        ]
+                      },
+                      "extension": null
+                    }
+                  ]
+                },
+                "extension": null
+              }
+            },
+            "groupSpec": null,
+            "output": {
+              "extension": {
+                "fieldList": {
+                  "field": [
+                    {
+                      "fieldspec": {
+                        "fieldname": "State",
+                        "datatype": null,
+                        "format": null,
+                        "extension": null
+                      },
+                      "name": "State",
+                      "includeFieldSpecInReport": false,
+                      "extension": {}
+                    }
+                  ]
+                },
+                "extension": null
+              },
+              "includeEPC": true,
+              "includeTag": false,
+              "includeRawHex": false,
+              "includeRawDecimal": false,
+              "includeCount": false
+            },
+            "extension": null,
+            "reportName": "ETB",
+            "reportIfEmpty": true,
+            "reportOnlyOnChange": false
+          }
+        ]
+      },
+      "extension": null,
+      "any": [],
+      "schemaVersion": null,
+      "creationDate": null,
+      "includeSpecInReports": false
+    },
+    "extension": null,
+    "any": null,
+    "name": "ETB_EC",
+    "baseExtension": null,
+    "schemaVersion": null,
+    "creationDate": null,
+    "enable": true
+  },
+  "subscribers": [
+  {
+    "uri": "queue://etb-ec",
+    "extension": null,
+    "any": null,
+    "name": "queue://etb-ec",
+    "baseExtension": null,
+    "schemaVersion": null,
+    "creationDate": null,
+    "enable": true
+  }
+  ]
+}

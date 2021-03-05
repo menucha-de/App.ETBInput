@@ -1,0 +1,526 @@
+{
+  "portCycle": {
+    "spec": {
+      "logicalReaders": {
+        "logicalReader": [
+          "BuiltIn"
+        ]
+      },
+      "boundarySpec": {
+        "startTriggerList": null,
+        "repeatPeriod": {
+          "value": 100,
+          "unit": "MS"
+        },
+        "stopTriggerList": null,
+        "duration": {
+          "value": 100,
+          "unit": "MS"
+        },
+        "noNewEventsInterval": null,
+        "whenDataAvailable": false,
+        "extension": null
+      },
+      "reportSpecs": {
+        "reportSpec": [
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin1",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x0"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": false,
+                  "opName": "0100",
+                  "portSpec": {
+                    "id": 1,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0100",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin1",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x1"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": true,
+                  "opName": "0101",
+                  "portSpec": {
+                    "id": 1,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0101",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin2",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x0"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": false,
+                  "opName": "0200",
+                  "portSpec": {
+                    "id": 2,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0200",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin2",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x1"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": true,
+                  "opName": "0201",
+                  "portSpec": {
+                    "id": 2,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0201",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin3",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x0"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": false,
+                  "opName": "0300",
+                  "portSpec": {
+                    "id": 3,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0300",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin3",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x1"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": true,
+                  "opName": "0301",
+                  "portSpec": {
+                    "id": 3,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0301",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin4",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x0"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": {
+              "opSpec": [
+                {
+                  "opType": "WRITE",
+                  "state": false,
+                  "opName": "0400",
+                  "portSpec": {
+                    "id": 4,
+                    "reader": "BuiltIn",
+                    "type": "OUTPUT",
+                    "extension": null
+                  },
+                  "duration": null,
+                  "extension": {}
+                }
+              ]
+            },
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0400",
+            "reportIfEmpty": false
+          },
+          {
+            "filterSpec": {
+              "filterList": {
+                "filter": [
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "pin4",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "x1"
+                      ]
+                    },
+                    "extension": null
+                  },
+                  {
+                    "includeExclude": "INCLUDE",
+                    "fieldspec": {
+                      "fieldname": "TID",
+                      "datatype": null,
+                      "format": null,
+                      "extension": null
+                    },
+                    "patList": {
+                      "pat": [
+                        "xE280B040"
+                      ]
+                    },
+                    "extension": null
+                  }
+                ]
+              },
+              "extension": null
+            },
+            "triggerList": null,
+            "opSpecs": null,
+            "statProfileNames": null,
+            "extension": null,
+            "name": "0401",
+            "reportIfEmpty": false
+          }
+        ]
+      },
+      "extension": null,
+      "any": [],
+      "schemaVersion": null,
+      "creationDate": null,
+      "includeSpecInReports": false
+    },
+    "extension": null,
+    "any": null,
+    "name": "ETB_Switch",
+    "baseExtension": null,
+    "schemaVersion": null,
+    "creationDate": null,
+    "enable": true
+  },
+  "subscribers": [
+  {
+    "uri": "queue://etb-pc",
+    "extension": null,
+    "any": null,
+    "name": "queue://etb-pc",
+    "baseExtension": null,
+    "schemaVersion": null,
+    "creationDate": null,
+    "enable": true
+  }
+  ]
+}

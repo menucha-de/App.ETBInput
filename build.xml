@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<project name="havis.custom.harting.etb.input" default="publish">
+
+	<property file="${basedir}/build.properties" />
+
+	<import>
+		<url url="${ivy.url}/ant/default.xml" />
+	</import>
+
+	<target name="clean-cache">
+		<clean-cache />
+	</target>
+
+	<target name="clean-all">
+		<clean-all />
+	</target>
+
+	<target name="compile">
+		<compile dst="${build.dir.classes}">
+			<src path="${src.main.dir}" />
+		</compile>
+	</target>
+
+	<target name="jar" depends="compile">
+		<compile-gwt />
+		<jar-bin />
+	</target>
+
+	<target name="app" depends="jar">
+		<app name="havis.etb-input" />
+	</target>
+
+	<target name="test" depends="compile" unless="${skip.test}">
+		<test />
+	</target>
+
+	<target name="standalone" depends="jar">
+		<standalone>
+			<extract name="havis.middleware.app" />
+		</standalone>
+	</target>
+
+	<target name="publish" depends="app" description="Publishes the JAR to the repository">
+		<publish jar="false" />
+	</target>
+
+</project>

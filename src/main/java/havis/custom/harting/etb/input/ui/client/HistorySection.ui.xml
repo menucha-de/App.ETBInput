@@ -1,0 +1,161 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:l="urn:import:havis.net.ui.shared.client.list">
+	<ui:with type="havis.net.ui.shared.resourcebundle.ResourceBundle" field="res"></ui:with>
+	<ui:with type="havis.net.ui.shared.resourcebundle.ConstantsResource" field="lang"></ui:with>
+	<ui:style>
+	.logcontrol-panel {
+		padding: 0.5em 0.3em;
+		border-top:  1px solid lightgrey;
+		border-bottom: 1px solid lightgrey;
+	}
+	
+	.controls {
+		flex: 1;
+	}
+	
+	.controls > .combo {
+		border-left: 1px solid lightgrey;
+	}
+	
+	.controls > div {
+		height: 2em;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 0 0.5em 0 0;
+	}
+
+	.controls > div.buttons {
+		flex: 1;
+		justify-content: space-between;
+		-ms-flex-pack: center;
+		padding: 0;
+		border-left: 1px solid lightgrey;
+		padding-left: 1em;
+	}
+	
+	.observe-button { 
+		border-radius: 16px;
+		font-weight: bold;
+		text-align: center;
+		width: 10em;
+		line-height: 32px;
+		position: relative;
+	}
+	.toggleList {
+		margin-left: auto;
+		padding-left: 0.5em;
+		/*border-left: 1px solid lightgrey;*/
+		width: 6em;
+		text-align: right;
+	}
+	
+	.smallButton {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 42px;
+		width: 42px;
+		border: none;
+		padding: 20px;
+		cursor: pointer;
+	}
+	
+	.smallButton:disabled {
+		opacity: 0.6;
+	}
+	
+	.refresh {
+		background-image: url("images/list_refresh.png");
+	}
+	
+
+	.clear {
+		background-image: url("images/edit-clear.png");
+	}
+	
+	.export {
+		border: none !important;
+		padding: 0 !important;
+		height: 42px;
+		width: 42px;
+	}
+	
+	.list {
+		height: 32px;
+		font-size: 1em;
+		padding-right: 40px;
+	}
+	
+	.list.levels {
+		width: 7em;
+	}
+	
+	.list.targets {
+		width: 7em;
+	}
+	
+	.log-list{
+	}
+
+	.log-list colgroup > col:nth-child\(1\),
+	.log-list colgroup > col:nth-child\(2\),
+	.log-list colgroup > col:nth-child\(4\),
+	.log-list colgroup > col:nth-child\(5\){
+		min-width: 5em;	
+		width: 10%;
+	}
+	.log-list colgroup > col:nth-child\(6\) {
+		min-width: 5em;	
+		width: 20%;
+	}
+	.log-list colgroup > col:nth-child\(3\) {
+		min-width: 15em;
+		width: 40%;
+	}
+	.log-list > div > table:first-child {
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.log-list > div table td {
+		text-align:center;
+	}
+	
+	.log-list > div > table:first-child td {
+		font-weight: bold;
+		line-height: 2em;
+	}
+	
+	.log-list > div > div table:last-child td {
+		line-height: 2em;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	
+
+	</ui:style>
+	<g:FlowPanel>
+		<g:FlowPanel addStyleNames="{style.logcontrol-panel} {res.css.row}">
+			<g:HTMLPanel ui:field="logControls" addStyleNames="{style.controls} {res.css.row}">
+				<div>
+					<g:ToggleButton ui:field="observeButton" addStyleNames="{style.observe-button} {res.css.button} {res.css.active}">
+						<g:upFace><ui:text from="{lang.observe}"></ui:text></g:upFace>
+						<g:downFace><ui:text from="{lang.observing}"></ui:text> <img src="{res.llrpListLoading.getSafeUri}" class="{res.css.load}" /></g:downFace>
+					</g:ToggleButton>
+				</div>
+				<div class="{style.buttons}">
+					<g:Button ui:field="refreshButton" addStyleNames="{style.smallButton} {res.css.refresh}" />
+					<g:Button ui:field="exportButton" addStyleNames="{style.smallButton} {res.css.export}" />
+				</div>
+			</g:HTMLPanel>
+		</g:FlowPanel>
+		<l:WidgetList ui:field="logList" sortable="false" addStyleNames="{style.log-list}" contentHeight="272px"/>
+	</g:FlowPanel>
+</ui:UiBinder> 
