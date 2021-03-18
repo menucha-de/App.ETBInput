@@ -1,4 +1,4 @@
-Bundle-Name: Ha-VIS ETB Input App
+Bundle-Name: ETB Input App
 Bundle-SymbolicName: havis.app.etb.input
 Application-Name: ETB Input
 Bundle-Version: 2.7.0
