@@ -1,14 +1,14 @@
-Bundle-Name: Ha-VIS Custom HARTING ETB Input App
-Bundle-SymbolicName: havis.custom.harting.etb.input
+Bundle-Name: Ha-VIS ETB Input App
+Bundle-SymbolicName: havis.app.etb.input
 Application-Name: ETB Input
 Bundle-Version: 2.7.0
 Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
-Bundle-Vendor: HARTING IT_SD
+Bundle-Vendor: Menucha Team <info@menucha.de>
 Havis-Bundle: 
- /OSGI-INF/havis.custom.harting.etb.input.properties
-Bundle-Activator: havis.custom.harting.etb.input.osgi.Activator
-Main-Class: havis.custom.harting.etb.input.Main
+ /OSGI-INF/havis.app.etb.input.properties
+Bundle-Activator: havis.app.etb.input.osgi.Activator
+Main-Class: havis.app.etb.input.Main
 Import-Package: 
  com.fasterxml.jackson.databind,
  havis.middleware.ale.base.exception,

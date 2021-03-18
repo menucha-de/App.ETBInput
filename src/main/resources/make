@@ -4,7 +4,7 @@
 
 APP=$(realpath $0)
 
-NAME=havis.custom.harting.etb.input
+NAME=havis.app.etb.input
 INFO=/opt/havis-apps/info
 EXIT=0
 

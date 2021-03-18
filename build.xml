@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="havis.custom.harting.etb.input" default="publish">
+<project name="havis.app.etb.input" default="publish">
 
 	<property file="${basedir}/build.properties" />
 
